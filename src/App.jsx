@@ -30,10 +30,10 @@ function onDownloadPDF() {
 }
 
 function App() {
-    const [fullName, setFullName] = useState('')
-    const [email, setEmail] = useState('')
-    const [phone, setPhone] = useState('')
-    const [city, setCity] = useState('')
+    const [fullName, setFullName] = useState('Napoleon Bonaparte')
+    const [email, setEmail] = useState('napoleon@france.fr')
+    const [phone, setPhone] = useState('+33 1 23 45 67 89')
+    const [city, setCity] = useState('Paris, France')
 
     function fullNameOnChange(e) {
         setFullName(e.target.value)
@@ -49,30 +49,30 @@ function App() {
     }
 
     const [educationItems, setEducationItems] = useState([
-        { startDate:'2012-07-23', 
-        endDate:'2012-11-25',
-        school: 'UCLA',
-        degree:'Computer Science',
-        city:'Los Angeles',
+        { startDate:'1779-01-01', 
+        endDate:'1784-01-01',
+        school: 'College of Autun',
+        degree:'French Language',
+        city:'Burgundy',
         id:1,
         editable: false
         },
-        { startDate:'2023-02-23', 
-        endDate:'2020-04-24',
-        school: 'LACMA',
-        degree:'Creative Writing',
-        city:'Los Angeles',
+        { startDate:'1784-01-01', 
+        endDate:'1785-01-01',
+        school: 'École Militaire',
+        degree:'Military Tactics',
+        city:'Paris',
         id:3,
         editable: true
         }
     ]);
     const [experienceItems, setExperienceItems] = useState([
-        { startDate:'2011-04-23', 
-        endDate:'2019-07-23',
-        company: 'TEX Drive',
-        title:'Junior Full Stack Engineer',
-        city:'Los Angeles',
-        responsibilities: "Actively participate in coding tasks, including developing software, applications, or web pages using various programming languages and tools.",
+        { startDate:'1904-01-01', 
+        endDate:'1815-07-22',
+        company: 'First French Empire',
+        title:'Emperor of the French',
+        city:'Paris',
+        responsibilities: "Ruled as the Emperor of the French and lead the French army in wars against various European coalitions.",
         id:1
         }
     ]);
